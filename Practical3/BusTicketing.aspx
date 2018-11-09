@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 20px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -69,13 +74,16 @@
             </tr>
 
             <tr>
-                <td></td>
-                <td>
+                <td colspan="2">
                     <asp:Label ID="lblError" runat="server"></asp:Label>
-
                 </td>
             </tr>
-
+            <tr>
+                <td colspan="2" class="auto-style1">
+                    <asp:Button ID="btnBookTkt" runat="server" Text="Book Ticket" OnClientClick="javascript:alert('You are now will be directed to the booking confirmation page')"/>
+&nbsp;<asp:Button ID="btnCancel" runat="server" Text="Cancel" OnMouseOver="this.value = 'Click if you confirm to reset selection'" OnMouseOut="this.value='Cancel'" OnClick="btnCancel_Click" style="height: 26px" />
+                </td>
+            </tr>
         </table>
     </form>
 </body>

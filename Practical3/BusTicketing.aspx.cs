@@ -71,5 +71,13 @@ namespace Practical3
 
             txtPrice.Text = "RM " + price.ToString("0.##");
         }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtPrice.Text = "";
+            txtAdult.Text = "";
+            txtChild.Text = "";
+            txtDepartDt.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

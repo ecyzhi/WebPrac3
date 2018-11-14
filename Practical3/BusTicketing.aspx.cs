@@ -69,7 +69,7 @@ namespace Practical3
                 }
             }
 
-            txtPrice.Text = "RM " + price.ToString("0.##");
+            txtPrice.Text = "RM " + price.ToString("0.00");
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)

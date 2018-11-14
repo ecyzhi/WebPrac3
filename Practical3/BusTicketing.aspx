@@ -80,7 +80,7 @@
             </tr>
             <tr>
                 <td colspan="2" class="auto-style1">
-                    <asp:Button ID="btnBookTkt" runat="server" Text="Book Ticket" OnClientClick="javascript:alert('You are now will be directed to the booking confirmation page')"/>
+                    <asp:Button ID="btnBookTkt" runat="server" Text="Book Ticket" OnClientClick="javascript:alert('You are now will be directed to the booking confirmation page')" PostBackUrl="~/ConfirmBooking.aspx"/>
 &nbsp;<asp:Button ID="btnCancel" runat="server" Text="Cancel" OnMouseOver="this.value = 'Click if you confirm to reset selection'" OnMouseOut="this.value='Cancel'" OnClick="btnCancel_Click" style="height: 26px" />
                 </td>
             </tr>
